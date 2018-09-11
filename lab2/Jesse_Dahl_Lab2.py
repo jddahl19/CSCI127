@@ -39,21 +39,19 @@ pencil = turtle.Turtle()
 pencil.shape("circle")
 
 def drawing_controls(x,y):
-    if (-200 <= x <= -150) and (150 <= y <= 200):
-        red = random.random()
-        green = random.random()
-        blue = random.random()
-        pencil.color(red, green, blue)
-
-def random_mouse(x,y):
-    if (200 <= x <= 250) and (150 <= y <= 200):
-        pencil.up()
-        x_chor = random.randint(-500,500)
-        y_chor = random.randint(-500,500)
-        pencil.goto(x_chor, y_chor)
-        pencil.down()
+	if (-200 <= x <= -150) and (150 <= y <= 200):
+        	red = random.random()
+        	green = random.random()
+        	blue = random.random()
+        	pencil.color(red, green, blue)
+	elif (200 <= x <= 250) and (150 <= y <= 200):
+		pencil.up()
+		x_chor = random.randint(-350,350)
+		y_chor = random.randint(-350,350)
+		pencil.goto(x_chor, y_chor)
+		pencil.down()
 
 window.onclick(drawing_controls)
-window.onclick(random_mouse)
 pencil.onrelease(pencil.goto)
-        
+
+turtle.mainloop()
