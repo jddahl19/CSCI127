@@ -1,5 +1,3 @@
-#THIS IS THE FINISHED LAB
-
 # --------------------------------------
 # CSCI 127, Lab 3
 # September 18, 2018
@@ -28,10 +26,11 @@ def count_vowels_iterative(sentence):
 
 def remove_iterative(sentence):
     white_space = " "
+    s = ""
     for i in sentence:
-        if white_space in sentence:
-            sentence = sentence.replace(white_space, "")
-    return(sentence)
+        if i != white_space:
+            s += i
+    return(s)
 
 
 # --------------------------------------
