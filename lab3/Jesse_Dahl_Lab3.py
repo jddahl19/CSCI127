@@ -1,3 +1,5 @@
+#THIS IS THE FINISHED LAB
+
 # --------------------------------------
 # CSCI 127, Lab 3
 # September 18, 2018
